@@ -42,11 +42,11 @@ chatimg.addEventListener("click", () => {
 
 
 
-let Api_url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key=AIzaSyApBzduL7gDJVLrZz_eJyCp2GbeXWZrPWU"
+let Api_url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key=env.GOOGLE_API_KEY;"
 
 // curl "https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent" \
 //   -H 'Content-Type: application/json' \
-//   -H 'X-goog-api-key: AIzaSyApBzduL7gDJVLrZz_eJyCp2GbeXWZrPWU' \
+//   key: AIzaSyApBzduL7gDJVLrZz_eJyCp2GbeXWZrPWU' \
 //   -X POST \
 //   -d '{
 //     "contents": [
