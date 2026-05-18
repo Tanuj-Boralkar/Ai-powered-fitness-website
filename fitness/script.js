@@ -61,14 +61,14 @@ let Api_url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-fl
 //   }'
 
 // headers: { "Content-Type"; "application/json" }
-// headers: "X-goog-api-key: AIzaSyApBzduL7gDJVLrZz_eJyCp2GbeXWZrPWU"
+// headers: -key: AIzaSyApBzduL7gDJVLrZz_eJyCp2GbeXWZrPWU"
 async function generateApiResponse(aiChatBox) {
   const textElement = aiChatBox.querySelector(".text")
   try {
     const response = await fetch(Api_url, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      // headers: "X-goog-api-key: AIzaSyApBzduL7gDJVLrZz_eJyCp2GbeXWZrPWU",
+      // headers: key: AIzaSyApBzduL7gDJVLrZz_eJyCp2GbeXWZrPWU",
       body: JSON.stringify({
         contents: [{
           "role": "user",
